@@ -1,0 +1,11 @@
+Package: renm
+Type: Package
+Title: renm - R client library for the eNanoMapper API
+Version: 0.0.1
+Date: 2015-09-22
+Author: Egon Willighagen <egon.willighagen@maastrichtuniversity.nl>
+Maintainer: Egon Willighagen <egon.willighagen@maastrichtuniversity.nl>
+Depends: jsonlite, curl, plyr
+Suggests: testthat
+Description: Use this package to interface with the eNanoMapper API.
+License: MIT + file LICENSE
