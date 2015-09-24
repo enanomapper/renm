@@ -13,7 +13,7 @@ listSubstanceOwners(service)
  \item{service}{the eNanoMapper server}
 }
 \value{
- \item{data}{the available bundles}
+ \item{data}{the available substance owners}
 }
 \examples{
 owners <- listSubstanceOwners(service="http://data.enanomapper.net/")
