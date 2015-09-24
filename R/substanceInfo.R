@@ -9,6 +9,6 @@ substanceInfo <- function(uri=NA) {
   conn <- curl::curl(url, handle, open="r")
   txt <- readLines(conn)
   close(conn)
-  data = fromJSON(txt)
+  data = fromJSON(txt, simplifyVector=F)$study[[1]]
 
 }
