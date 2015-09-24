@@ -3,5 +3,6 @@ importFrom(curl, curl, new_handle, handle_setheaders)
 importFrom(plyr, laply)
 
 export(
-  listBundles
+  listBundles,
+  listSubstanceOwners
 )
