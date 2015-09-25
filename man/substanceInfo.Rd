@@ -17,7 +17,7 @@ substanceInfo(uri)
  \item{data}{the information of the substance}
 }
 \examples{
-info <- substanceInfo(uri="https://data.enanomapper.net/substance/NWKI-71060af4-1613-35cf-95ee-2a039be0388a")
+info <- substanceInfo(uri="http://data.enanomapper.net/substance/NWKI-71060af4-1613-35cf-95ee-2a039be0388a")
 }
 \author{
 Egon Willighagen
