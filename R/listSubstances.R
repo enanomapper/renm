@@ -1,4 +1,4 @@
-listSubstances <- function(service=NA) {
+listSubstances <- function(service=NA, search=NA, type="name") {
   if (missing(service)) stop("You must specify the API service to use.");
 
   handle = new_handle()
@@ -6,6 +6,9 @@ listSubstances <- function(service=NA) {
   handle_setheaders(handle, "Accept" = "application/json")
 
   url = paste(service, "substance", sep="")
+  if (!missing(search)) {
+    url = paste(url, "?search=", search, "&type=", type, sep="")
+  }
   conn <- curl::curl(url, handle, open="r")
   txt <- readLines(conn)
   close(conn)

@@ -4,5 +4,7 @@ importFrom(plyr, laply)
 
 export(
   listBundles,
-  listSubstanceOwners
+  listSubstanceOwners,
+  listSubstances,
+  substanceInfo
 )
