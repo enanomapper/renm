@@ -6,5 +6,6 @@ export(
   listBundles,
   listSubstanceOwners,
   listSubstances,
-  substanceInfo
+  substanceInfo,
+  substanceStructures
 )
