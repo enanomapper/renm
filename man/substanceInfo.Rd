@@ -5,7 +5,7 @@ Looks up information about a specific substance
 }
 \description{
 Looks up information about a specific substance as identified with the given
-URI..
+URI.
 }
 \usage{
 substanceInfo(uri)
