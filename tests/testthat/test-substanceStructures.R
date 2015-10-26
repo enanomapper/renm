@@ -1,4 +1,4 @@
-library(citeuliker)
+library(renm)
 context("Substance Structures")
 
 test_that("substance structures are found", {
