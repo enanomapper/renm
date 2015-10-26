@@ -1,4 +1,4 @@
-library(citeuliker)
+library(renm)
 context("SubstanceOwners")
 
 test_that("substance owners are found", {
