@@ -1,4 +1,4 @@
-library(citeuliker)
+library(renm)
 context("Substance Information")
 
 test_that("substance info is found", {
