@@ -1,4 +1,4 @@
-library(citeuliker)
+library(renm)
 context("Bundles")
 
 test_that("bundles are found", {
