@@ -18,12 +18,12 @@ listSubstances(service,search,type)
  \item{data}{the available substances}
 }
 \examples{
-owners <- listSubstances(service="http://data.enanomapper.net/")
-owners <- listSubstances(
+substances <- listSubstances(service="http://data.enanomapper.net/")
+substances <- listSubstances(
   service="http://data.enanomapper.net/",
   search="10.1073/pnas.0802878", type="citation"
 )
-owners <- listSubstances(
+substances <- listSubstances(
   service="http://data.enanomapper.net/",
   search="NanoWiki", type="owner_name"
 )
