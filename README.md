@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/enanomapper/renm.svg?branch=master)](https://travis-ci.org/enanomapper/renm)
+
 # renm
 
 R Client library for the eNanoMapper API (http://enanomapper.net/) (license: MIT).
