@@ -3,6 +3,7 @@
 # renm
 
 R Client library for the eNanoMapper API (http://enanomapper.net/) (license: MIT).
+The API is extensively described in the paper by [Jealizkova et al. in the BJON](http://dx.doi.org/10.3762/bjnano.6.165).
 
 # install
 
