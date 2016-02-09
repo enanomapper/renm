@@ -11,7 +11,7 @@ The API is extensively described in the paper by [Jealizkova et al. in the BJON]
     > install.packages("testthat") # if you want to test the package
     > install.packages("devtools") # to install from GitHub
     > library(devtools)
-    > install_github("enanomapper/renm", subdir="renm")
+    > install_github("enanomapper/renm")
 
 # examples
 
