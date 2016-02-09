@@ -12,7 +12,7 @@ listSubstances(service,search,type)
 \arguments{
  \item{service}{the eNanoMapper server}
  \item{search}{the text to search for}
- \item{type}{what to search for. Supported vaules are owner_name and citation.}
+ \item{type}{what to search for. Supported values are owner_name and citation.}
 }
 \value{
  \item{data}{the available substances}
