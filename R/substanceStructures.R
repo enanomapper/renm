@@ -6,9 +6,8 @@ substanceStructures <- function(uri=NA) {
   handle_setheaders(handle, "Accept" = "application/json")
 
   url = paste(uri, "/structures", sep="")
-  conn <- curl::curl(url, handle, open="r")
-  txt <- readLines(conn)
-  close(conn)
+  res <- curl::curl_fetch_memory(url, handle)
+  txt <- rawToChar(res$content)
   data = fromJSON(txt, simplifyVector=F)
 
 }

@@ -5,10 +5,9 @@ listSubstanceOwners <- function(service=NA) {
   handle_setheaders(handle, "User-Agent" = "r/renm")
   handle_setheaders(handle, "Accept" = "application/json")
 
-  url = paste(service, "substanceowner", sep="")
-  conn <- curl::curl(url, handle, open="r")
-  txt <- readLines(conn)
-  close(conn)
-  data = fromJSON(txt)
+  url = paste(service, "substanceowner/", sep="")
+  res <- curl::curl_fetch_memory(url, handle)
+  txt <- rawToChar(res$content)
+  data = fromJSON(txt)$facet
 
 }

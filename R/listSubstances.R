@@ -9,9 +9,8 @@ listSubstances <- function(service=NA, search=NA, type="name") {
   if (!missing(search)) {
     url = paste(url, "?search=", search, "&type=", type, sep="")
   }
-  conn <- curl::curl(url, handle, open="r")
-  txt <- readLines(conn)
-  close(conn)
+  res <- curl::curl_fetch_memory(url, handle)
+  txt <- rawToChar(res$content)
   data = fromJSON(txt)
 
 }

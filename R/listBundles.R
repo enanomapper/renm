@@ -6,9 +6,8 @@ listBundles <- function(service=NA) {
   handle_setheaders(handle, "Accept" = "application/json")
 
   url = paste(service, "bundle/", sep="")
-  conn <- curl::curl(url, handle, open="r")
-  txt <- readLines(conn)
-  close(conn)
-  data = fromJSON(txt)
+  res <- curl::curl_fetch_memory(url, handle)
+  txt <- rawToChar(res$content)
 
+  data = fromJSON(txt)
 }
