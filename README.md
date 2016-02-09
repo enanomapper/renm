@@ -13,6 +13,9 @@ The API is extensively described in the paper by [Jealizkova et al. in the BJON]
     > library(devtools)
     > install_github("enanomapper/renm")
 
+The package is tested with curl 0.9.5, but I have encoutered problems with
+changes and/or API changes in this package.
+
 # examples
 
     > bundles = listBundles("http://data.enanomapper.net/")
