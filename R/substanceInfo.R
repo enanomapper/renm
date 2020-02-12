@@ -8,6 +8,6 @@ substanceInfo <- function(uri=NA) {
   url = paste(uri, "/study", sep="")
   res <- curl::curl_fetch_memory(url, handle)
   txt <- rawToChar(res$content)
-  data = fromJSON(txt, simplifyVector=F)$study
+  data = fromJSON(txt, simplifyVector=F)$study[[1]]
 
 }
